@@ -1,0 +1,30 @@
+<header class="header">
+    <div class="container header__container">
+        <div class="header__item">
+            <a routerLink="home" class="header__logo"><img src="assets/logo.svg" alt="Food Delivery"></a>
+            <div class="header-search">
+                <input class="header-search__input" type="search" placeholder="Search" [(ngModel)]="searchText" (input)="onSearch()">
+                <span class="header-search__icon" *ngIf="isSearchTextEmpty"><img src="assets/search.svg" alt="search"></span>
+            </div>        
+        </div>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <div class="header-search-mob">
+                    <input class="header-search__input" type="search" placeholder="Search" [(ngModel)]="searchText" (input)="onSearch()">
+                    <span class="header-search__icon" *ngIf="isSearchTextEmpty"><img src="assets/search.svg" alt="search"></span>
+                </div>        
+    
+                <li class="header__li"><a routerLink="/">Restaurants</a></li>
+                <li class="header__li"><a routerLink="/">Deals</a></li>
+
+                <span class="material-icons icon-close">close</span>
+
+            </ul>
+            <span class="material-icons icon-menu">menu</span>
+            <span class="header__divider"><img src="assets/divider.svg" alt="divider"></span>
+            <a class="header__order" routerLink="/">My orders</a>
+            <a routerLink="/" class="header__cart"><img src="assets/shopping-bag.svg" alt="Cart"></a>
+            <a routerLink="profile" class="header__profile"><img src="assets/main-avatar.png" alt="Avatar"></a>
+        </nav>    
+    </div>
+</header>

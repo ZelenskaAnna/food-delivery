@@ -1,0 +1,9 @@
+* {
+    font-family: var(--ff);
+}
+
+.container {
+    max-width: calc(1110px + 40px);
+    padding: 0 20px;
+    margin-inline: auto;
+}
